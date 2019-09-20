@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">     
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>Home</title>
+</head>
+
+
+<body>
+{% include "base/css.html" %}
+{% include 'navbar.html' %}
+{% block content %}
+<main role="main" class="container">
+    <div class="jumbotron">
+      <img src="{% static 'img/brocolli.jpg' %}" height="400" ,  width="1000">
+      <h1>50%-80%</h1>
+      <p class="lead"><strong>CLOTHING SALE</strong></p>
+      <a class="btn btn-lg btn-primary" href="https://www.freedomclub.in/" role="button">BUY NOW &raquo;</a>
+    </div>
+  </main>
+{% endblock %}  
+
+{% include "base/js.html" %}
+  
+</body>
+</html>
